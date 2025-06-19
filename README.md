@@ -6,7 +6,6 @@ A simple web application that allows users to bookmark their favorite websites. 
 
 - ✅ **Add Bookmarks** with site name and URL
 - 📋 **View Saved Bookmarks** in a clean list
-- ✏️ **Edit Bookmarks** directly in the list
 - ❌ **Delete Bookmarks** with one click
 - 💾 **Local Storage Support** – data remains even after closing the browser
 - 📱 **Responsive Design** – works on all devices
