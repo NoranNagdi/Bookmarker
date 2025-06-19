@@ -1,0 +1,70 @@
+<html>
+
+<head>
+
+    <title>Bookmarker</title>
+    <link rel="icon" href="Assets/star.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+
+</head>
+
+<body>
+
+    <div class="container my-5 min-vh-100">
+        <div
+            class="main-title-container d-flex flex-column justify-content-center align-items-center position-relative">
+            <h1 class="mb-5 position-relative">Bookmarker</h1>
+            <div class="highlight"></div>
+        </div>
+
+        <div class="title text-center">
+            <hr class="dotted-line">
+            <h2 class="my-4">
+                <i class="fa-solid fa-bookmark fs-3"></i>
+                Bookmark your favorite sites
+                <i class="fa-solid fa-bookmark fs-3"></i>
+            </h2>
+        </div>
+
+        <i class="fa-solid fa-book-bookmark"></i>
+        <label for="siteNameInput" class="my-2 fw-bold">Site Name</label>
+        <input type="text" placeholder="Bookmark Name" class="form-control mb-3" id="siteNameInput" />
+
+        <i class="fa-solid fa-link"></i>
+        <label for="siteUrlInput" class="my-2 fw-bold">Site URL</label>
+        <input type="text" placeholder="Website URL" class="form-control mb-3" id="siteUrlInput" />
+
+        <div class="button-container text-center">
+            <button class="btn btn-danger px-5 my-3" onclick="addBookmark()">
+                Submit
+            </button>
+        </div>
+
+        <hr class="dotted-line">
+
+        <table class="table text-center my-5 bg-light">
+            <thead>
+                <th>Index</th>
+                <th>Website Name</th>
+                <th>Visit</th>
+                <th>Delete</th>
+            </thead>
+            <tbody id="tBody">
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src="JS/index.js"></script>
+</body>
+
+</html>
